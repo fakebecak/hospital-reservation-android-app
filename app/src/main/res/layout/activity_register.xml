@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/blue"
+  tools:context=".ui.auth.RegisterActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:layout_marginBottom="100dp"
+      android:text="@string/register"
+      android:textColor="@color/white"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:hint="@string/name"
+      app:boxBackgroundColor="@color/white"
+      app:boxStrokeColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:hint="@string/phone"
+      app:boxBackgroundColor="@color/white"
+      app:boxStrokeColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:hint="@string/address"
+      app:boxBackgroundColor="@color/white"
+      app:boxStrokeColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:startIconDrawable="@drawable/ic_baseline_home_24">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:hint="@string/email"
+      app:boxBackgroundColor="@color/white"
+      app:boxStrokeColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:hint="@string/password"
+      app:boxBackgroundColor="@color/white"
+      app:boxStrokeColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+      android:id="@+id/btn_register"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:backgroundTint="@color/green"
+      android:text="@string/register"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/textLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/login"
+      android:textAlignment="center"
+      android:textColor="@color/white" />
+
+  </LinearLayout>
+
+  <ProgressBar
+    android:id="@+id/progressBarRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810883539723",
+    "project_id": "tamboto-hospital-reservation",
+    "storage_bucket": "tamboto-hospital-reservation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810883539723:android:6877f52ce03d0db22f780e",
+        "android_client_info": {
+          "package_name": "com.tamboto.hospitalreservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810883539723-f60mo8d69i4muj6hppt380fdkac17aao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tamboto.hospitalreservation",
+            "certificate_hash": "2fc6f3a47a7bd543b9ce19fdd05369186ec1c7f6"
+          }
+        },
+        {
+          "client_id": "810883539723-aovjf8ep6jl5dok56grccm0c175idhu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCieaWheIuABj4jycHBQa8YOeRhT2IW-VM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810883539723-aovjf8ep6jl5dok56grccm0c175idhu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

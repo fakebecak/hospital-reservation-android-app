@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.polyclinic.PolyclinicActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="@dimen/no_space">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbarPolyclinic"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/white" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/cardPolyclinicHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_space"
+        app:cardCornerRadius="@dimen/default_card_corner_radius"
+        app:cardElevation="@dimen/default_card_elevation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <androidx.cardview.widget.CardView
+            android:id="@+id/cardLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/default_space"
+            app:cardCornerRadius="@dimen/default_card_corner_radius"
+            app:cardElevation="@dimen/default_card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:layout_gravity="center"
+              android:src="@drawable/ic_baseline_location_on_24"
+              app:tint="@color/primary" />
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+            android:id="@+id/cardPolyclinicImage"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="@dimen/large_space"
+            app:cardBackgroundColor="@color/secondary"
+            app:cardCornerRadius="64dp"
+            app:cardElevation="@dimen/default_card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+              android:id="@+id/imagePolyclinic"
+              android:layout_width="128dp"
+              android:layout_height="128dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/ic_doctor" />
+
+          </androidx.cardview.widget.CardView>
+
+          <TextView
+            android:id="@+id/textPolyclinicName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_space"
+            android:layout_marginTop="@dimen/default_space"
+            android:layout_marginEnd="@dimen/default_space"
+            android:gravity="center"
+            android:text="Name"
+            app:layout_constraintTop_toBottomOf="@id/cardPolyclinicImage" />
+
+          <TextView
+            android:id="@+id/textPolyclinicDescription"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_space"
+            android:layout_marginEnd="@dimen/default_space"
+            android:layout_marginBottom="@dimen/large_space"
+            android:gravity="center"
+            android:text="Description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPolyclinicName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <TextView
+        android:id="@+id/textScheduleHeader"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_space"
+        android:text="Jadwal"
+        app:layout_constraintTop_toBottomOf="@id/cardPolyclinicHeader" />
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textScheduleHeader"
+        tools:listitem="@layout/item_schedule" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  <ProgressBar
+    android:id="@+id/progressBarPolyclinic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

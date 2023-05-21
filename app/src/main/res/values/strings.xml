@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">Hospital Reservation</string>
+  <string name="title_admin">Admin</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="login">Login</string>
+  <string name="register">Daftar</string>
+  <string name="name">Nama</string>
+  <string name="phone">No. Telp</string>
+  <string name="address">Alamat</string>
+  <string name="polyclinics">Poliklinik</string>
+  <string name="doctors">Dokter</string>
+  <string name="schedules">Jadwal</string>
+  <string name="patients">Pasien</string>
+</resources>

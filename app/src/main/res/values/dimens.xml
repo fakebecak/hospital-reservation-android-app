@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="no_space">0dp</dimen>
+  <dimen name="tiny_space">2dp</dimen>
+  <dimen name="small_space">4dp</dimen>
+  <dimen name="medium_space">8dp</dimen>
+  <dimen name="default_space">16dp</dimen>
+  <dimen name="large_space">32dp</dimen>
+  <dimen name="huge_space">64dp</dimen>
+
+  <dimen name="default_card_corner_radius">16dp</dimen>
+  <dimen name="default_card_elevation">6dp</dimen>
+</resources>
